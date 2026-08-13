@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600&display=swap');
 
 
 :root {
@@ -21,53 +21,37 @@
 }
 
 
-/* ============================= */
 /* GENERAL */
-/* ============================= */
-
 
 * {
-
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
-
 }
 
 
 html {
-
   scroll-behavior: smooth;
-
 }
 
 
 body {
-
   background: var(--cream);
-
   color: var(--brown);
 
-  font-family: "DM Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
 
   overflow-x: hidden;
-
 }
 
 
 button {
-
-  font-family: inherit;
-
+  font-family: "Manrope", sans-serif;
 }
 
 
 
-/* ============================= */
-/* LUZ INTERACTIVA */
-/* ============================= */
-
+/* LUZ */
 
 .cursor-light {
 
@@ -97,10 +81,7 @@ button {
 
 
 
-/* ============================= */
 /* FLECHAS */
-/* ============================= */
-
 
 .line-arrow {
 
@@ -149,7 +130,6 @@ button {
   transform: rotate(45deg);
 
 }
-
 
 
 .item-arrow {
@@ -203,7 +183,6 @@ button {
 }
 
 
-
 .down-arrow {
 
   width: 9px;
@@ -217,7 +196,6 @@ button {
   margin-top: -4px;
 
 }
-
 
 
 .up-arrow {
@@ -234,10 +212,7 @@ button {
 
 
 
-/* ============================= */
 /* NAVEGACIÓN */
-/* ============================= */
-
 
 .navbar {
 
@@ -274,11 +249,11 @@ button {
 
   color: var(--burgundy);
 
-  font-family:
-    "Playfair Display",
-    serif;
+  font-family: "Cormorant Garamond", serif;
 
-  font-size: 22px;
+  font-size: 26px;
+
+  font-weight: 600;
 
 }
 
@@ -289,7 +264,7 @@ button {
 
   align-items: center;
 
-  gap: 19px;
+  gap: 18px;
 
 }
 
@@ -302,7 +277,9 @@ button {
 
   color: var(--brown);
 
-  font-size: 12px;
+  font-size: 11px;
+
+  letter-spacing: 0.3px;
 
   transition:
     color 0.3s ease;
@@ -342,7 +319,6 @@ button {
   width: 100%;
 
 }
-
 
 
 .wiki-button {
@@ -385,10 +361,7 @@ button {
 
 
 
-/* ============================= */
 /* PORTADA */
-/* ============================= */
-
 
 .hero {
 
@@ -423,7 +396,9 @@ button {
 
   color: var(--burgundy);
 
-  font-size: 11px;
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
 
   font-weight: 600;
 
@@ -437,15 +412,17 @@ button {
 h1 {
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    clamp(70px, 10vw, 150px);
+    clamp(75px, 11vw, 165px);
 
   font-weight: 500;
 
-  line-height: 0.82;
+  line-height: 0.76;
+
+  letter-spacing: -3px;
 
 }
 
@@ -458,16 +435,20 @@ h1 span {
 
   font-style: italic;
 
+  font-weight: 400;
+
 }
 
 
 .hero-info {
 
-  margin-top: 45px;
+  margin-top: 50px;
 
-  font-size: 16px;
+  font-family: "Manrope", sans-serif;
 
-  line-height: 1.8;
+  font-size: 14px;
+
+  line-height: 1.9;
 
 }
 
@@ -496,7 +477,7 @@ h1 span {
 
   color: var(--brown);
 
-  font-size: 13px;
+  font-size: 12px;
 
   transition:
     background 0.3s ease,
@@ -526,7 +507,6 @@ h1 span {
 
 
 /* DECORACIÓN PORTADA */
-
 
 .hero-decoration {
 
@@ -587,17 +567,13 @@ h1 span {
 
   0%,
   100% {
-
     transform:
       translateY(0);
-
   }
 
   50% {
-
     transform:
       translateY(30px);
-
   }
 
 }
@@ -605,7 +581,6 @@ h1 span {
 
 
 /* LATERAL PORTADA */
-
 
 .hero-side {
 
@@ -628,9 +603,7 @@ h1 span {
 
 
 .hero-side span {
-
   font-size: 12px;
-
 }
 
 
@@ -647,7 +620,7 @@ h1 span {
 
 .hero-side p {
 
-  font-size: 9px;
+  font-size: 8px;
 
   letter-spacing: 2px;
 
@@ -657,10 +630,7 @@ h1 span {
 
 
 
-/* ============================= */
 /* SECCIONES */
-/* ============================= */
-
 
 .section {
 
@@ -689,7 +659,7 @@ h1 span {
 
   color: var(--burgundy);
 
-  font-size: 12px;
+  font-size: 11px;
 
   letter-spacing: 2px;
 
@@ -708,15 +678,17 @@ h1 span {
 h2 {
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    clamp(50px, 7vw, 100px);
+    clamp(55px, 8vw, 110px);
 
   font-weight: 500;
 
-  line-height: 0.95;
+  line-height: 0.88;
+
+  letter-spacing: -1.5px;
 
 }
 
@@ -725,7 +697,9 @@ h2 em {
 
   color: var(--burgundy);
 
-  font-weight: 500;
+  font-weight: 400;
+
+  font-style: italic;
 
 }
 
@@ -734,24 +708,20 @@ h2 em {
 
   max-width: 720px;
 
-  font-size: 18px;
+  font-family: "Manrope", sans-serif;
 
-  line-height: 1.75;
+  font-size: 16px;
+
+  line-height: 1.85;
 
 }
 
 
 
-/* ============================= */
 /* SOBRE MÍ */
-/* ============================= */
-
 
 .about {
-
-  background:
-    var(--beige);
-
+  background: var(--beige);
 }
 
 
@@ -770,9 +740,7 @@ h2 em {
 
 
 .concept-area {
-
   min-height: 260px;
-
 }
 
 
@@ -783,7 +751,7 @@ h2 em {
   color:
     var(--brown-soft);
 
-  font-size: 10px;
+  font-size: 9px;
 
   letter-spacing: 2px;
 
@@ -824,7 +792,7 @@ h2 em {
     100px;
 
   font-size:
-    10px;
+    9px;
 
   letter-spacing:
     2px;
@@ -842,10 +810,8 @@ h2 em {
 
 
 .concept-button:hover {
-
   transform:
     translateY(-2px);
-
 }
 
 
@@ -886,7 +852,7 @@ h2 em {
   color:
     var(--burgundy);
 
-  font-size: 10px;
+  font-size: 9px;
 
   font-weight: 600;
 
@@ -900,21 +866,21 @@ h2 em {
   max-width: 390px;
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
-  font-size: 20px;
+  font-size: 24px;
 
-  line-height: 1.45;
+  line-height: 1.35;
+
+  font-style: italic;
 
 }
 
 
 .concept-description.change {
-
   animation:
     conceptAppear 0.35s ease;
-
 }
 
 
@@ -942,16 +908,10 @@ h2 em {
 
 
 
-/* ============================= */
 /* INTERESES */
-/* ============================= */
-
 
 .interests {
-
-  background:
-    var(--cream-light);
-
+  background: var(--cream-light);
 }
 
 
@@ -987,7 +947,6 @@ h2 em {
     rgba(66, 53, 47, 0.12);
 
   transition:
-
     transform 0.4s ease,
     box-shadow 0.4s ease,
     background 0.4s ease;
@@ -1001,7 +960,6 @@ h2 em {
     var(--white);
 
   box-shadow:
-
     0 30px 60px
     rgba(66, 53, 47, 0.10);
 
@@ -1071,17 +1029,17 @@ h2 em {
   margin-bottom: 25px;
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    clamp(35px, 4vw, 55px);
+    clamp(42px, 5vw, 65px);
 
   font-weight:
     500;
 
   line-height:
-    1;
+    0.9;
 
 }
 
@@ -1092,10 +1050,10 @@ h2 em {
     430px;
 
   font-size:
-    15px;
+    14px;
 
   line-height:
-    1.7;
+    1.75;
 
 }
 
@@ -1128,35 +1086,30 @@ h2 em {
 
 .interest-card:hover
 .card-line {
-
-  width:
-    100%;
-
+  width: 100%;
 }
 
 
 
-/* ============================= */
-/* TALLERES + CURSOS */
-/* ============================= */
-
+/* TALLERES Y CURSOS */
 
 .list-section,
 .courses-section {
-
-  background:
-    var(--cream);
-
+  background: var(--cream);
 }
 
 
 .small-title {
 
   font-size:
-    clamp(45px, 6vw, 75px);
+    clamp(50px, 7vw, 85px);
 
   margin-bottom:
     65px;
+
+  font-style: italic;
+
+  font-weight: 400;
 
 }
 
@@ -1195,7 +1148,6 @@ h2 em {
     none;
 
   transition:
-
     padding 0.3s ease,
     background 0.3s ease,
     color 0.3s ease;
@@ -1226,48 +1178,40 @@ h2 em {
     var(--burgundy);
 
   font-size:
-    12px;
+    11px;
 
 }
 
 
 .academic-item:hover
 .year {
-
-  color:
-    var(--beige);
-
+  color: var(--beige);
 }
 
 
 .academic-item p {
 
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
   font-size:
-    19px;
+    24px;
 
 }
 
 
 .academic-item:hover
 .item-arrow {
-
-  color:
-    var(--cream);
-
+  color: var(--cream);
 }
 
 
 
-/* ============================= */
 /* PROYECTOS */
-/* ============================= */
-
 
 .projects-section {
-
-  background:
-    var(--beige);
-
+  background: var(--beige);
 }
 
 
@@ -1310,7 +1254,6 @@ h2 em {
     none;
 
   transition:
-
     background 0.4s ease,
     transform 0.4s ease,
     box-shadow 0.4s ease,
@@ -1331,7 +1274,6 @@ h2 em {
     translateY(-8px);
 
   box-shadow:
-
     0 28px 55px
     rgba(66, 53, 47, 0.12);
 
@@ -1356,10 +1298,7 @@ h2 em {
 .project-top,
 .project-card:hover
 .item-arrow {
-
-  color:
-    var(--beige);
-
+  color: var(--beige);
 }
 
 
@@ -1372,17 +1311,17 @@ h2 em {
     25px;
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    31px;
+    38px;
 
   font-weight:
     500;
 
   line-height:
-    1.05;
+    0.95;
 
 }
 
@@ -1390,10 +1329,10 @@ h2 em {
 .project-card p {
 
   font-size:
-    14px;
+    13px;
 
   line-height:
-    1.65;
+    1.7;
 
   opacity:
     0.8;
@@ -1402,10 +1341,7 @@ h2 em {
 
 
 
-/* ============================= */
 /* TRAVESÍA */
-/* ============================= */
-
 
 .travel {
 
@@ -1422,10 +1358,7 @@ h2 em {
 .section-number,
 .travel
 .eyebrow {
-
-  color:
-    var(--burgundy-light);
-
+  color: var(--burgundy-light);
 }
 
 
@@ -1444,7 +1377,6 @@ h2 em {
     35px;
 
   border-bottom:
-
     1px solid
     rgba(246, 240, 231, 0.20);
 
@@ -1452,10 +1384,7 @@ h2 em {
 
 
 .travel-heading h2 {
-
-  color:
-    var(--cream);
-
+  color: var(--cream);
 }
 
 
@@ -1465,7 +1394,7 @@ h2 em {
     var(--beige-dark);
 
   font-size:
-    13px;
+    12px;
 
   letter-spacing:
     1px;
@@ -1499,17 +1428,19 @@ h2 em {
 .travel-description > p {
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    28px;
+    34px;
 
   line-height:
-    1.4;
+    1.3;
 
   color:
     var(--beige);
+
+  font-style: italic;
 
 }
 
@@ -1537,7 +1468,6 @@ h2 em {
     18px;
 
   border-top:
-
     1px solid
     rgba(246, 240, 231, 0.20);
 
@@ -1553,7 +1483,7 @@ h2 em {
     var(--burgundy-light);
 
   font-size:
-    9px;
+    8px;
 
   letter-spacing:
     2px;
@@ -1567,13 +1497,12 @@ h2 em {
 .travel-data strong {
 
   font-size:
-    14px;
+    13px;
 
   font-weight:
     400;
 
 }
-
 
 
 .travel-button {
@@ -1597,7 +1526,6 @@ h2 em {
     20px;
 
   border:
-
     1px solid
     rgba(246, 240, 231, 0.45);
 
@@ -1611,10 +1539,9 @@ h2 em {
     none;
 
   font-size:
-    12px;
+    11px;
 
   transition:
-
     background 0.3s ease,
     color 0.3s ease,
     transform 0.3s ease;
@@ -1637,10 +1564,7 @@ h2 em {
 
 
 
-/* ============================= */
 /* MAPA */
-/* ============================= */
-
 
 .map-card {
 
@@ -1675,7 +1599,6 @@ h2 em {
     translateY(-6px);
 
   box-shadow:
-
     0 30px 70px
     rgba(0, 0, 0, 0.16);
 
@@ -1706,7 +1629,6 @@ h2 em {
     50%;
 
   background:
-
     radial-gradient(
       circle,
       rgba(116, 38, 58, 0.13),
@@ -1742,7 +1664,7 @@ h2 em {
     var(--burgundy);
 
   font-size:
-    9px;
+    8px;
 
   letter-spacing:
     3px;
@@ -1753,14 +1675,14 @@ h2 em {
 .map-label p {
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-style:
     italic;
 
   font-size:
-    17px;
+    20px;
 
 }
 
@@ -1816,7 +1738,6 @@ h2 em {
     none;
 
   stroke:
-
     rgba(66, 53, 47, 0.15);
 
   stroke-width:
@@ -1826,10 +1747,7 @@ h2 em {
 
 
 .location-dot {
-
-  fill:
-    var(--burgundy);
-
+  fill: var(--burgundy);
 }
 
 
@@ -1879,13 +1797,8 @@ h2 em {
 
 
 .map-guide {
-
-  stroke:
-    var(--burgundy);
-
-  stroke-width:
-    1;
-
+  stroke: var(--burgundy);
+  stroke-width: 1;
 }
 
 
@@ -1895,11 +1808,11 @@ h2 em {
     var(--burgundy);
 
   font-family:
-    "DM Sans",
+    "Manrope",
     sans-serif;
 
   font-size:
-    13px;
+    12px;
 
   font-weight:
     600;
@@ -1916,11 +1829,11 @@ h2 em {
     var(--brown-soft);
 
   font-family:
-    "DM Sans",
+    "Manrope",
     sans-serif;
 
   font-size:
-    9px;
+    8px;
 
   letter-spacing:
     2px;
@@ -1931,7 +1844,7 @@ h2 em {
 .map-note {
 
   font-size:
-    9px;
+    8px;
 
   letter-spacing:
     1px;
@@ -1943,10 +1856,7 @@ h2 em {
 
 
 
-/* ============================= */
-/* CIERRE TRAVESÍA */
-/* ============================= */
-
+/* PALABRAS TRAVESÍA */
 
 .travel-phrase {
 
@@ -1957,7 +1867,6 @@ h2 em {
     45px;
 
   border-top:
-
     1px solid
     rgba(246, 240, 231, 0.20);
 
@@ -1976,39 +1885,119 @@ h2 em {
 .travel-phrase p {
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    clamp(25px, 4vw, 50px);
+    clamp(32px, 5vw, 60px);
 
   font-style:
     italic;
+
+  font-weight:
+    400;
 
 }
 
 
 .travel-phrase p:nth-child(2) {
-
-  text-align:
-    center;
-
+  text-align: center;
 }
 
 
 .travel-phrase p:nth-child(3) {
-
-  text-align:
-    right;
-
+  text-align: right;
 }
 
 
 
-/* ============================= */
-/* FOOTER */
-/* ============================= */
+/* CONTACTO */
 
+.contact-section {
+  background: var(--cream-light);
+}
+
+
+.contact-link {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    30px;
+
+  width:
+    100%;
+
+  max-width:
+    900px;
+
+  margin-top:
+    50px;
+
+  padding:
+    28px 0;
+
+  border-top:
+    1px solid
+    var(--beige-dark);
+
+  border-bottom:
+    1px solid
+    var(--beige-dark);
+
+  color:
+    var(--brown);
+
+  text-decoration:
+    none;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(27px, 4vw, 48px);
+
+  transition:
+    color 0.3s ease,
+    padding 0.3s ease;
+
+}
+
+
+.contact-link:visited {
+  color: var(--brown);
+}
+
+
+.contact-link:hover {
+
+  color:
+    var(--burgundy);
+
+  padding-left:
+    15px;
+
+  padding-right:
+    15px;
+
+}
+
+
+.contact-link .line-arrow {
+  color: var(--burgundy);
+}
+
+
+
+/* FOOTER */
 
 .footer {
 
@@ -2042,11 +2031,13 @@ h2 em {
     8px;
 
   font-family:
-    "Playfair Display",
+    "Cormorant Garamond",
     serif;
 
   font-size:
-    32px;
+    38px;
+
+  font-style: italic;
 
 }
 
@@ -2054,7 +2045,7 @@ h2 em {
 .footer > div > p:last-child {
 
   font-size:
-    12px;
+    11px;
 
   opacity:
     0.75;
@@ -2094,10 +2085,9 @@ h2 em {
     none;
 
   font-size:
-    12px;
+    11px;
 
   border-bottom:
-
     1px solid
     rgba(246, 240, 231, 0.40);
 
@@ -2108,18 +2098,68 @@ h2 em {
 
 
 .footer-links a:hover {
+  border-color: var(--cream);
+}
 
-  border-color:
-    var(--cream);
+
+
+/* DISCLAIMER IA */
+
+.ai-disclaimer {
+
+  padding:
+    24px 8% 28px;
+
+  background:
+    #f2ebe2;
+
+  border-top:
+    1px solid
+    rgba(66, 53, 47, 0.12);
+
+}
+
+
+.ai-disclaimer p {
+
+  max-width:
+    900px;
+
+  margin:
+    0;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    9px;
+
+  line-height:
+    1.7;
+
+  font-weight:
+    300;
+
+  color:
+    rgba(66, 53, 47, 0.60);
+
+}
+
+
+.ai-disclaimer strong {
+
+  color:
+    var(--burgundy);
+
+  font-weight:
+    600;
 
 }
 
 
 
-/* ============================= */
-/* APARICIÓN SCROLL */
-/* ============================= */
-
+/* APARICIÓN */
 
 .reveal {
 
@@ -2130,11 +2170,8 @@ h2 em {
     translateY(45px);
 
   transition:
-
     opacity 0.8s ease,
-
-    transform
-    0.8s
+    transform 0.8s
     cubic-bezier(
       0.16,
       1,
@@ -2157,61 +2194,39 @@ h2 em {
 
 
 
-/* ============================= */
 /* TABLET */
-/* ============================= */
-
 
 @media (max-width: 1050px) {
 
   .nav-links {
-
-    gap:
-      13px;
-
+    gap: 13px;
   }
 
-
   .nav-links > a:not(.wiki-button) {
-
-    display:
-      none;
-
+    display: none;
   }
 
 }
 
 
 
-/* ============================= */
 /* MÓVIL */
-/* ============================= */
-
 
 @media (max-width: 900px) {
 
 
   .navbar {
-
-    padding:
-      16px 5%;
-
+    padding: 16px 5%;
   }
 
 
   .hero {
-
-    padding:
-      130px 7% 70px;
-
+    padding: 130px 7% 70px;
   }
 
 
   .hero-side {
-
-    display:
-      none;
-
+    display: none;
   }
 
 
@@ -2241,34 +2256,22 @@ h2 em {
 
 
   .interest-grid {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
 
 
   .project-grid {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
 
 
   .project-card {
-
-    min-height:
-      300px;
-
+    min-height: 300px;
   }
 
 
   .project-card h3 {
-
-    margin-top:
-      60px;
-
+    margin-top: 60px;
   }
 
 
@@ -2298,10 +2301,7 @@ h2 em {
 
 
   .travel-data {
-
-    grid-template-columns:
-      1fr;
-
+    grid-template-columns: 1fr;
   }
 
 
@@ -2319,10 +2319,7 @@ h2 em {
   .travel-phrase p,
   .travel-phrase p:nth-child(2),
   .travel-phrase p:nth-child(3) {
-
-    text-align:
-      left;
-
+    text-align: left;
   }
 
 
@@ -2349,89 +2346,28 @@ h2 em {
 
 
   .footer-links {
-
-    flex-direction:
-      column;
-
+    flex-direction: column;
   }
 
 }
 
-/* ============================= */
-/* CONTACTO */
-/* ============================= */
 
-.contact-section {
-  background: var(--cream-light);
-}
-
-.contact-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 30px;
-
-  width: 100%;
-  max-width: 900px;
-
-  margin-top: 50px;
-
-  padding: 28px 0;
-
-  border-top: 1px solid var(--beige-dark);
-  border-bottom: 1px solid var(--beige-dark);
-
-  color: var(--brown);
-  text-decoration: none;
-
-  font-family: "Playfair Display", serif;
-  font-size: clamp(22px, 3vw, 38px);
-
-  transition:
-    color 0.3s ease,
-    padding 0.3s ease;
-}
-
-.contact-link:visited {
-  color: var(--brown);
-}
-
-.contact-link:hover {
-  color: var(--burgundy);
-
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.contact-link .line-arrow {
-  color: var(--burgundy);
-}
 
 @media (max-width: 600px) {
 
 
   h1 {
-
-    font-size:
-      62px;
-
+    font-size: 67px;
   }
 
 
   .hero-info {
-
-    font-size:
-      14px;
-
+    font-size: 13px;
   }
 
 
   .academic-item p {
-
-    font-size:
-      15px;
-
+    font-size: 19px;
   }
 
 
@@ -2447,18 +2383,17 @@ h2 em {
 
 
   .chile-map {
-
-    height:
-      420px;
-
+    height: 420px;
   }
 
 
   .cursor-light {
+    display: none;
+  }
 
-    display:
-      none;
 
+  .ai-disclaimer {
+    padding: 22px 7%;
   }
 
 }

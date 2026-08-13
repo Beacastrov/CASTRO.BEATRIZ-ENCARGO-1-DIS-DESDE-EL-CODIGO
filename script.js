@@ -1,7 +1,4 @@
-/* ================================== */
 /* LUZ QUE SIGUE EL CURSOR */
-/* ================================== */
-
 
 const cursorLight =
   document.querySelector(".cursor-light");
@@ -26,10 +23,7 @@ document.addEventListener(
 
 
 
-/* ================================== */
 /* APARICIÓN AL HACER SCROLL */
-/* ================================== */
-
 
 const revealElements =
   document.querySelectorAll(".reveal");
@@ -59,9 +53,7 @@ const observer =
     },
 
     {
-
       threshold: 0.12
-
     }
 
   );
@@ -77,10 +69,7 @@ revealElements.forEach(
 
 
 
-/* ================================== */
 /* CONCEPTOS SOBRE MÍ */
-/* ================================== */
-
 
 const conceptInformation = {
 
@@ -223,10 +212,7 @@ conceptButtons.forEach(
 
 
 
-/* ================================== */
 /* NAVEGACIÓN SEGÚN SCROLL */
-/* ================================== */
-
 
 const sections =
   document.querySelectorAll(
@@ -307,10 +293,7 @@ window.addEventListener(
 
 
 
-/* ================================== */
 /* MOVIMIENTO DE TARJETAS */
-/* ================================== */
-
 
 const cards =
   document.querySelectorAll(
@@ -387,10 +370,7 @@ cards.forEach(
 
 
 
-/* ================================== */
-/* MOVIMIENTO SUAVE DEL MAPA */
-/* ================================== */
-
+/* MOVIMIENTO DEL MAPA */
 
 const mapCard =
   document.querySelector(
