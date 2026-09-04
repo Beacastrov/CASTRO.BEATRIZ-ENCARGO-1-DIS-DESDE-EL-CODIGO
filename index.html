@@ -1,1033 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encargo 1 · Diseño desde el Código</title>
 
-  <title>Beatriz Castro Vega</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <link rel="stylesheet" href="style.css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f0e8;
+      color: #111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 32px 6%;
+      border-bottom: 1px solid #111;
+    }
+
+    header p {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8%;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 110px);
+      line-height: 0.95;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .bajada {
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 60px;
+    }
+
+    .versiones {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+    }
+
+    .version {
+      border: 1px solid #111;
+      padding: 32px;
+      text-decoration: none;
+      color: #111;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.2s ease;
+    }
+
+    .version:hover {
+      background: #111;
+      color: #f5f0e8;
+    }
+
+    .numero {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .version h2 {
+      font-size: 34px;
+      margin-top: 50px;
+    }
+
+    .version p {
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    footer {
+      padding: 24px 6%;
+      font-size: 13px;
+      border-top: 1px solid #111;
+    }
+
+    @media (max-width: 700px) {
+      .versiones {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 60px 6%;
+      }
+
+      h1 {
+        font-size: 54px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- LUZ INTERACTIVA -->
-  <div class="cursor-light"></div>
-
-
-  <!-- NAVEGACIÓN -->
-  <nav class="navbar">
-
-    <a href="#inicio" class="nav-name">
-      BCV
-    </a>
-
-    <div class="nav-links">
-
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#intereses">Intereses</a>
-      <a href="#talleres">Talleres</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#cursos">Cursos</a>
-      <a href="#travesia">Travesía</a>
-      <a href="#contacto">Contacto</a>
-
-      <a
-        href="https://wiki.ead.pucv.cl/Beatriz_Castro_Vega"
-        target="_blank"
-        class="wiki-button"
-      >
-        <span>Wiki</span>
-        <span class="line-arrow"></span>
-      </a>
-
-    </div>
-
-  </nav>
-
+  <header>
+    <p>Diseño desde el Código · 2026</p>
+  </header>
 
   <main>
 
+    <h1>Encargo 1</h1>
 
-    <!-- PORTADA -->
+    <p class="bajada">
+      Desarrollo de una página de presentación personal en dos etapas,
+      desde una primera versión básica hasta un sitio con páginas internas
+      vinculadas entre sí.
+    </p>
 
-    <header class="hero" id="inicio">
+    <section class="versiones">
 
-      <div class="hero-decoration decoration-one"></div>
-      <div class="hero-decoration decoration-two"></div>
+      <a href="version-1/" class="version">
+        <span class="numero">01</span>
 
-      <div class="hero-content reveal">
-
-        <p class="eyebrow">
-          PRESENTACIÓN PERSONAL
-        </p>
-
-        <h1>
-          Beatriz
-          <span>Castro Vega</span>
-        </h1>
-
-        <div class="hero-info">
-
-          <p>
-            Estudiante de Diseño de Tercer Año
-          </p>
-
-          <p>
-            Escuela de Arquitectura y Diseño PUCV
-          </p>
-
+        <div>
+          <h2>Versión inicial</h2>
+          <p>Primera aproximación a la página de presentación personal.</p>
         </div>
+      </a>
 
-        <a href="#sobre-mi" class="explore-button">
+      <a href="version-2/" class="version">
+        <span class="numero">02</span>
 
-          <span>Explorar</span>
-
-          <span class="down-arrow"></span>
-
-        </a>
-
-      </div>
-
-
-      <div class="hero-side">
-
-        <span>01</span>
-
-        <div class="vertical-line"></div>
-
-        <p>
-          DISEÑO · MATERIALIDAD · INTERACCIÓN
-        </p>
-
-      </div>
-
-    </header>
-
-
-
-    <!-- SOBRE MÍ -->
-
-    <section class="section about" id="sobre-mi">
-
-      <div class="section-number reveal">
-        02
-      </div>
-
-
-      <div class="section-content reveal">
-
-        <p class="eyebrow">
-          SOBRE MÍ
-        </p>
-
-        <h2>
-          Diseño entre
-          <em>objeto</em>
-          e interacción.
-        </h2>
-
-
-        <div class="about-layout">
-
-          <div class="about-text">
-
-            <p class="body-text">
-              Soy estudiante de Diseño y me interesa explorar distintas
-              formas de relacionar materialidad, construcción, experiencia
-              e interacción. Actualmente mis principales áreas de interés
-              son el diseño industrial y el diseño de interacción.
-            </p>
-
-          </div>
-
-
-          <div class="concept-area">
-
-            <p class="concept-instruction">
-              Selecciona un concepto
-            </p>
-
-
-            <div class="about-words">
-
-              <button
-                class="concept-button active"
-                data-concept="forma"
-              >
-                FORMA
-              </button>
-
-
-              <button
-                class="concept-button"
-                data-concept="materia"
-              >
-                MATERIA
-              </button>
-
-
-              <button
-                class="concept-button"
-                data-concept="experiencia"
-              >
-                EXPERIENCIA
-              </button>
-
-
-              <button
-                class="concept-button"
-                data-concept="movimiento"
-              >
-                MOVIMIENTO
-              </button>
-
-            </div>
-
-
-            <div
-              class="concept-description"
-              id="concept-description"
-            >
-
-              <span id="concept-title">
-                FORMA
-              </span>
-
-              <p id="concept-text">
-                La configuración visible y material mediante la cual
-                una idea de diseño adquiere presencia.
-              </p>
-
-            </div>
-
-          </div>
-
+        <div>
+          <h2>Versión desarrollada</h2>
+          <p>Sitio con Inicio, Sobre mí y Contacto vinculados entre sí.</p>
         </div>
-
-      </div>
+      </a>
 
     </section>
-
-
-
-    <!-- INTERESES -->
-
-    <section class="section interests" id="intereses">
-
-      <div class="section-number reveal">
-        03
-      </div>
-
-
-      <div class="section-content">
-
-        <p class="eyebrow reveal">
-          INTERESES
-        </p>
-
-
-        <div class="interest-grid">
-
-
-          <article class="interest-card reveal">
-
-            <div class="interest-top">
-
-              <span>
-                01
-              </span>
-
-              <div class="interest-icon">
-                ◇
-              </div>
-
-            </div>
-
-
-            <h3>
-              Diseño
-              <br>
-              Industrial
-            </h3>
-
-
-            <p>
-              Me interesa la relación entre forma, materialidad,
-              mecanismos, construcción y objetos.
-            </p>
-
-
-            <div class="card-line"></div>
-
-          </article>
-
-
-
-          <article class="interest-card reveal">
-
-            <div class="interest-top">
-
-              <span>
-                02
-              </span>
-
-              <div class="interest-icon">
-                ○
-              </div>
-
-            </div>
-
-
-            <h3>
-              Diseño de
-              <br>
-              Interacción
-            </h3>
-
-
-            <p>
-              Me interesa cómo las personas se relacionan con objetos,
-              sistemas e interfaces mediante movimiento, luz,
-              sonido y recursos digitales.
-            </p>
-
-
-            <div class="card-line"></div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- TALLERES -->
-
-    <section class="section list-section" id="talleres">
-
-      <div class="section-number reveal">
-        04
-      </div>
-
-
-      <div class="section-content">
-
-        <p class="eyebrow reveal">
-          TALLERES
-        </p>
-
-
-        <h2 class="small-title reveal">
-          Trayectoria de taller.
-        </h2>
-
-
-        <div class="academic-list">
-
-
-          <a
-            class="academic-item reveal"
-            href="https://wiki.ead.pucv.cl/Taller_de_Observaci%C3%B3n_Fundamento_y_Forma_2024_S1"
-            target="_blank"
-          >
-
-            <span class="year">
-              2024
-            </span>
-
-            <p>
-              Taller de Observación Fundamento y Forma
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            class="academic-item reveal"
-            href="https://wiki.ead.pucv.cl/Taller_de_la_Diversi%C3%B3n_del_H%C3%A1bito_2024"
-            target="_blank"
-          >
-
-            <span class="year">
-              2024
-            </span>
-
-            <p>
-              Taller de la Diversión del Hábito
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            class="academic-item reveal"
-            href="https://wiki.ead.pucv.cl/Taller_del_Habitar_2025"
-            target="_blank"
-          >
-
-            <span class="year">
-              2025
-            </span>
-
-            <p>
-              Taller del Habitar
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            class="academic-item reveal"
-            href="https://wiki.ead.pucv.cl/Taller_Topol%C3%B3gico_Multiescalar_1S_2025"
-            target="_blank"
-          >
-
-            <span class="year">
-              2025
-            </span>
-
-            <p>
-              Taller Topológico Multiescalar
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            class="academic-item reveal"
-            href="https://wiki.ead.pucv.cl/Taller_de_Algoritmos_Cin%C3%A9ticos_2026"
-            target="_blank"
-          >
-
-            <span class="year">
-              2026
-            </span>
-
-            <p>
-              Taller de Algoritmos Cinéticos
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            class="academic-item reveal"
-            href="https://wiki.ead.pucv.cl/Taller_de_Espacios_Expositivos_2026"
-            target="_blank"
-          >
-
-            <span class="year">
-              2026
-            </span>
-
-            <p>
-              Taller de Espacios Expositivos
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- PROYECTOS -->
-
-    <section
-      class="section projects-section"
-      id="proyectos"
-    >
-
-      <div class="section-number reveal">
-        05
-      </div>
-
-
-      <div class="section-content">
-
-        <p class="eyebrow reveal">
-          PROYECTOS
-        </p>
-
-
-        <h2 class="small-title reveal">
-          Exploraciones realizadas.
-        </h2>
-
-
-        <div class="project-grid">
-
-
-          <a
-            href="https://wiki.ead.pucv.cl/Beatriz_Castro_/_Expansi%C3%B3n_Geom%C3%A9trica_Y_Pulso_Lum%C3%ADnico_En_Torno_A_Una_Vertical"
-            target="_blank"
-            class="project-card reveal"
-          >
-
-            <div class="project-top">
-
-              <span>
-                01
-              </span>
-
-              <span class="item-arrow"></span>
-
-            </div>
-
-
-            <h3>
-              Expansión Geométrica y Pulso Lumínico
-            </h3>
-
-
-            <p>
-              Exploración cinética en torno a verticalidad,
-              transformación geométrica, sonido y luz.
-            </p>
-
-          </a>
-
-
-
-          <a
-            href="https://wiki.ead.pucv.cl/Sinfon%C3%ADa_Boreal_-_Exposici%C3%B3n_IE_2025"
-            target="_blank"
-            class="project-card reveal"
-          >
-
-            <div class="project-top">
-
-              <span>
-                02
-              </span>
-
-              <span class="item-arrow"></span>
-
-            </div>
-
-
-            <h3>
-              Sinfonía Boreal
-            </h3>
-
-
-            <p>
-              Exploración visual y digital desarrollada
-              desde el movimiento, la interacción
-              y la imagen generativa.
-            </p>
-
-          </a>
-
-
-
-          <a
-            href="https://wiki.ead.pucv.cl/Sitio_Web_IE_-_Beatriz_Castro_Vega"
-            target="_blank"
-            class="project-card reveal"
-          >
-
-            <div class="project-top">
-
-              <span>
-                03
-              </span>
-
-              <span class="item-arrow"></span>
-
-            </div>
-
-
-            <h3>
-              Sitio Web IE
-            </h3>
-
-
-            <p>
-              Desarrollo digital vinculado a Imagen Escrita
-              y exploraciones gráficas en soporte web.
-            </p>
-
-          </a>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- CURSOS -->
-
-    <section
-      class="section courses-section"
-      id="cursos"
-    >
-
-      <div class="section-number reveal">
-        06
-      </div>
-
-
-      <div class="section-content">
-
-        <p class="eyebrow reveal">
-          CURSOS
-        </p>
-
-
-        <h2 class="small-title reveal">
-          Formación complementaria.
-        </h2>
-
-
-        <div class="academic-list">
-
-
-          <a
-            href="https://wiki.ead.pucv.cl/El_dibujo_como_herramienta_de_conocimiento_2S_2024"
-            target="_blank"
-            class="academic-item reveal"
-          >
-
-            <span class="year">
-              2024
-            </span>
-
-            <p>
-              El dibujo como herramienta de conocimiento
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            href="https://wiki.ead.pucv.cl/Lenguaje_y_Representaci%C3%B3n_S2_2024"
-            target="_blank"
-            class="academic-item reveal"
-          >
-
-            <span class="year">
-              2024
-            </span>
-
-            <p>
-              Lenguaje y Representación
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-
-          <a
-            href="https://wiki.ead.pucv.cl/Imagen_Escrita_2025"
-            target="_blank"
-            class="academic-item reveal"
-          >
-
-            <span class="year">
-              2025
-            </span>
-
-            <p>
-              Imagen Escrita
-            </p>
-
-            <span class="item-arrow"></span>
-
-          </a>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- TRAVESÍA -->
-
-    <section
-      class="section travel"
-      id="travesia"
-    >
-
-      <div class="section-number reveal">
-        07
-      </div>
-
-
-      <div class="section-content">
-
-        <p class="eyebrow reveal">
-          TRAVESÍA
-        </p>
-
-
-        <div class="travel-heading reveal">
-
-          <h2>
-            Cochamó
-          </h2>
-
-          <p>
-            Región de Los Lagos · Chile
-          </p>
-
-        </div>
-
-
-
-        <div class="travel-grid">
-
-
-          <div class="travel-description reveal">
-
-            <p>
-              Una experiencia desarrollada desde la observación
-              del territorio, el trabajo colectivo y la relación
-              directa entre diseño, lugar y experiencia.
-            </p>
-
-
-            <div class="travel-data">
-
-              <div>
-
-                <span>
-                  DESTINO
-                </span>
-
-                <strong>
-                  Cochamó
-                </strong>
-
-              </div>
-
-
-              <div>
-
-                <span>
-                  TERRITORIO
-                </span>
-
-                <strong>
-                  Sur de Chile
-                </strong>
-
-              </div>
-
-            </div>
-
-
-            <a
-              href="https://wiki.ead.pucv.cl/Traves%C3%ADa_Cocham%C3%B3"
-              target="_blank"
-              class="travel-button"
-            >
-
-              <span>
-                Ver Travesía
-              </span>
-
-              <span class="line-arrow"></span>
-
-            </a>
-
-          </div>
-
-
-
-          <!-- MAPA -->
-
-          <div class="map-card reveal">
-
-            <div class="map-label">
-
-              <span>
-                UBICACIÓN
-              </span>
-
-              <p>
-                Chile · Cochamó
-              </p>
-
-            </div>
-
-
-            <div class="map-wrapper">
-
-              <svg
-                class="chile-map"
-                viewBox="0 0 260 640"
-                role="img"
-                aria-label="Representación esquemática de Chile con Cochamó señalado"
-              >
-
-                <path
-                  class="chile-shape"
-                  d="
-                  M142 20
-                  C129 46 137 73 128 98
-                  C119 124 132 151 121 178
-                  C112 204 122 227 114 251
-                  C106 276 114 297 105 320
-                  C97 343 103 369 96 393
-                  C89 416 99 440 91 463
-                  C84 486 89 505 82 525
-                  C73 547 79 565 68 586
-                  C62 597 58 610 51 622
-                  "
-                />
-
-
-                <path
-                  class="map-shadow-line"
-                  d="
-                  M158 24
-                  C145 55 152 84 144 112
-                  C137 141 144 169 136 198
-                  C129 226 135 250 126 279
-                  C118 306 124 334 116 363
-                  C108 391 115 419 105 448
-                  C98 473 102 501 93 530
-                  C84 557 78 586 66 614
-                  "
-                />
-
-
-                <circle
-                  class="location-ring"
-                  cx="108"
-                  cy="422"
-                  r="17"
-                />
-
-
-                <circle
-                  class="location-dot"
-                  cx="108"
-                  cy="422"
-                  r="6"
-                />
-
-
-                <line
-                  class="map-guide"
-                  x1="126"
-                  y1="422"
-                  x2="195"
-                  y2="422"
-                />
-
-
-                <text
-                  x="200"
-                  y="418"
-                  class="map-place"
-                >
-                  COCHAMÓ
-                </text>
-
-
-                <text
-                  x="200"
-                  y="438"
-                  class="map-region"
-                >
-                  LOS LAGOS
-                </text>
-
-              </svg>
-
-
-              <p class="map-note">
-                Representación esquemática del territorio.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="travel-phrase reveal">
-
-          <p>
-            territorio
-          </p>
-
-          <p>
-            observación
-          </p>
-
-          <p>
-            experiencia
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- CONTACTO -->
-
-    <section
-      class="section contact-section"
-      id="contacto"
-    >
-
-      <div class="section-number reveal">
-        08
-      </div>
-
-
-      <div class="section-content">
-
-        <p class="eyebrow reveal">
-          CONTACTO
-        </p>
-
-
-        
-
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=beatriz.castro.v@mail.pucv.cl"
-          target="_blank"
-          class="contact-link reveal"
-        >
-
-          <span>
-            beatriz.castro.v@mail.pucv.cl
-          </span>
-
-          <span class="line-arrow"></span>
-
-        </a>
-
-      </div>
-
-    </section>
-
 
   </main>
 
-
-
-  <!-- FOOTER -->
-
-  <footer class="footer">
-
-    <div>
-
-      <p class="footer-name">
-        Beatriz Castro Vega
-      </p>
-
-      <p>
-        Diseño · PUCV
-      </p>
-
-    </div>
-
-
-    <div class="footer-links">
-
-
-      <a href="#inicio">
-
-        <span>
-          Volver arriba
-        </span>
-
-        <span class="up-arrow"></span>
-
-      </a>
-
-
-      <a
-        href="https://wiki.ead.pucv.cl/Beatriz_Castro_Vega"
-        target="_blank"
-      >
-
-        <span>
-          Wiki Casiopea
-        </span>
-
-        <span class="line-arrow"></span>
-
-      </a>
-
-
-    </div>
-
+  <footer>
+    Beatriz Castro · Diseño desde el Código
   </footer>
 
-
-
-  <!-- DISCLAIMER IA -->
-
-  <div class="ai-disclaimer">
-
-    <p>
-      <strong>Disclaimer de uso de IA.</strong>
-      Para la elaboración de esta página se utilizó inteligencia artificial
-      como herramienta de apoyo durante el proceso de diseño y desarrollo,
-      principalmente para la construcción y revisión del código, la resolución
-      de dudas técnicas, la organización de contenidos y la exploración de
-      recursos interactivos. Las decisiones de diseño, selección de contenidos,
-      ajustes visuales y resultado final fueron desarrolladas y revisadas por
-      la autora.
-    </p>
-
-  </div>
-
-
-
-  <script src="script.js"></script>
-
 </body>
-
 </html>
